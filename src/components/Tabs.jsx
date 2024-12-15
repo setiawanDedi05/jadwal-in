@@ -37,9 +37,9 @@ const Tabs = ({ children }) => {
   );
 };
 
-const Tab = ({ label, children }) => {
+const Tab = ({ label, children, className }) => {
   return (
-    <div label={label} className="hidden">
+    <div label={label} className={`hidden ${className}`}>
       {children}
     </div>
   );

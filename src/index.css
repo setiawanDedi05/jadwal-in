@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.react-calendar {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  border: none !important;
+  border-radius: 12px;
+}
+
+/* .react-calendar__navigation{
+
+} */
+
+/* .react-calendar__navigation__arrow{
+
+} */
+
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+  display: none;
+}
+
+.react-calendar__navigation__label,
+.react-calendar__navigation__next-button,
+.react-calendar__navigation__prev-button {
+  color: #3875f6;
+  font-weight: bold;
+}
+
+.react-calendar__viewContainer {
+  border-radius: 12px;
+  font-weight: bold;
+  padding-bottom: 12px;
+  padding-inline: 12px;
+}
+
+.react-calendar__month-view__weekdays {
+  color: #3875f6;
+}
+
+.react-calendar__tile {
+  background: #f7f7f7 !important;
+  border-radius: 8px;
+}
+
+.react-calendar__tile:hover {
+  background-color: #3875f6 !important;
+  color: white !important;
+}
+
+.react-calendar__tile--now {
+  color: #3875f6 !important;
+  position: relative;
+  background-color: #f7f7f7 !important;
+}
+
+.react-calendar__tile--now::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.react-calendar__tile--active {
+  background-color: #3875f6 !important;
+  color: white !important;
+}

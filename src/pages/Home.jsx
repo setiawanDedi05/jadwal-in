@@ -1,11 +1,12 @@
 import React from "react";
 import ProfileImage from "../assets/img/profile.png";
-import PersonCard from "../components/personCard";
+import PersonCard from "../components/PersonCard";
 import Person from "../assets/img/person.png";
 import { useNavigate } from "react-router-dom";
+import Button from "../components/Button";
 
 export default function HomePage() {
-    const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="w-full h-[100vh] bg-white flex flex-col items-center pt-9 px-4 pb-9">
       <img
@@ -22,9 +23,7 @@ export default function HomePage() {
         <PersonCard img={Person} name="Любой мастер" />
       </div>
 
-      <button className="w-[238px] h-[62px] rounded-rounded-button bg-primary text-center text-white font-bold mt-auto" onClick={() => navigate('/services')}>
-        Далее
-      </button>
+      <Button onClick={() => navigate("/services")}>Далее</Button>
     </div>
   );
 }
